@@ -1,5 +1,7 @@
 <html>
-    <head></head>
+    <head>
+        <link rel='stylesheet' href='style.css'>
+    </head>
     <body>
         <div class='heading-box'>
             <div>Acme Layout</div>
@@ -8,20 +10,25 @@
             <div>Contact</div>
         </div>
         <h1>Users</h1>
-        <div class='create-user'>
-            <h1>Create A User</h1>
-            <p>First Name</p>
-            <input type='text'>
-            <p>Last Name</p>
-            <input type='text'>
-            <p>Department</p>
-            <select>
-                <option>--None--</option>
-            </select>
-            <button>Clear</button>
-            <button>Save</button>
+        <div class='usercontainer'>
+            <div class='create-user'>
+                <h1>Create A User</h1>
+                <div class='user-list'>
+                    <div>First Name <input type='text'></div>
+                    <div>Last Name <input type='text'></div>
+                    <div>Department
+                        <select>
+                            <option>--None--</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='buttons'>
+                    <button class='Clear-button'>Clear</button>
+                    <button class='Save-button'>Save</button>
+                </div>
+            </div>
         </div>
-        <div>
+        <div class='user-boxes'>
             <div>
                 <h6>User A</h6>
                 <p>Some text for the user.</p>
